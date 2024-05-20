@@ -2,7 +2,7 @@
 Cooking....
 
 
-# Installation of the environment with Linux, CUDA10.1, and Conda:
+# Installation of the environment :
 
 ```bash
 conda create --name AI_Watcher python=3.8
@@ -10,9 +10,9 @@ conda activate AI_Watcher
 conda install -c anaconda cudatoolkit -y
 conda install pytorch-cuda=12.1 -c pytorch -c nvidia -y
 conda install pytorch torchvision torchaudio -c pytorch -c nvidia -y
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
-conda install -c conda-forge pycocotools
-conda install tqdm opencv
+pip install torch torchvision
+pip install pycocotools
+pip install tqdm opencv-python
 ```
 
 Install the repository :
