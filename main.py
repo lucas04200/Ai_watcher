@@ -25,4 +25,5 @@ if __name__ == '__main__':
     data_manager.results = results
     data_manager.save_data()
 
-    socket.start(results)
+    unity_data = socket.start(results)
+    data_manager.save_unity_data(unity_data)
